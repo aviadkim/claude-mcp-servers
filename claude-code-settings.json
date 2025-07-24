@@ -1,0 +1,54 @@
+{
+  "mcp": {
+    "servers": {
+      "docker-management": {
+        "command": "node",
+        "args": ["C:/Users/Aviad/OneDrive/Desktop/claude-mcp-servers/docker-mcp-server.js"]
+      },
+      "deployment-management": {
+        "command": "node", 
+        "args": ["C:/Users/Aviad/OneDrive/Desktop/claude-mcp-servers/deployment-mcp-server.js"]
+      },
+      "playwright-testing": {
+        "command": "node",
+        "args": ["C:/Users/Aviad/OneDrive/Desktop/claude-mcp-servers/playwright-mcp-server.js"]
+      },
+      "github-management": {
+        "command": "node",
+        "args": ["C:/Users/Aviad/OneDrive/Desktop/claude-mcp-servers/github-mcp-server.js"]
+      },
+      "semgrep-security": {
+        "command": "node", 
+        "args": ["C:/Users/Aviad/OneDrive/Desktop/claude-mcp-servers/semgrep-mcp-server.js"]
+      },
+      "filesystem-utilities": {
+        "command": "node",
+        "args": ["C:/Users/Aviad/OneDrive/Desktop/claude-mcp-servers/filesystem-mcp-server.js"]
+      },
+      "filescope-analysis": {
+        "command": "node",
+        "args": ["C:/Users/Aviad/OneDrive/Desktop/claude-mcp-servers/filescope-mcp-server.js"]
+      },
+      "repomix-packing": {
+        "command": "node",
+        "args": ["C:/Users/Aviad/OneDrive/Desktop/claude-mcp-servers/repomix-mcp-server.js"]
+      },
+      "task-management": {
+        "command": "node",
+        "args": ["C:/Users/Aviad/OneDrive/Desktop/claude-mcp-servers/task-management-mcp-server.js"]
+      },
+      "advanced-file-ops": {
+        "command": "node",
+        "args": ["C:/Users/Aviad/OneDrive/Desktop/claude-mcp-servers/advanced-file-ops-mcp-server.js"]
+      },
+      "code-quality": {
+        "command": "node",
+        "args": ["C:/Users/Aviad/OneDrive/Desktop/claude-mcp-servers/code-quality-mcp-server.js"]
+      },
+      "process-management": {
+        "command": "node",
+        "args": ["C:/Users/Aviad/OneDrive/Desktop/claude-mcp-servers/process-management-mcp-server.js"]
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@ A comprehensive collection of Model Context Protocol (MCP) servers designed to s
 
 ## 🎯 Overview
 
-This repository contains **7 production-ready MCP servers** that provide Claude Code with powerful development capabilities across all your projects:
+This repository contains **13 production-ready MCP servers** that provide Claude Code with powerful development capabilities across all your projects:
 
 - **🐳 Docker Management** - Container orchestration and deployment
 - **🚀 Deployment Automation** - Render & Vercel deployment with health checks
@@ -12,6 +12,12 @@ This repository contains **7 production-ready MCP servers** that provide Claude 
 - **🐙 GitHub Integration** - Repository management and PR automation
 - **🔒 Security Scanning** - Semgrep vulnerability detection
 - **📁 Filesystem Utilities** - Advanced file operations
+- **🔍 FileScopeMCP** - Codebase structure analysis and visualization
+- **📦 Repomix** - Code packing for AI-friendly formats
+- **📋 Task Management** - Project task tracking and organization
+- **🗂️ Advanced File Operations** - Bulk file operations and synchronization
+- **✨ Code Quality** - Formatting, linting, and quality analysis
+- **⚙️ Process Management** - System process monitoring and control
 - **🌐 Puppeteer Tools** - PDF processing and web scraping
 
 ## 🛠️ Quick Start
@@ -62,6 +68,30 @@ Add to your `~/.claude/settings.json`:
       "filesystem-utilities": {
         "command": "node",
         "args": ["C:/path/to/claude-mcp-servers/filesystem-mcp-server.js"]
+      },
+      "filescope-analysis": {
+        "command": "node",
+        "args": ["C:/path/to/claude-mcp-servers/filescope-mcp-server.js"]
+      },
+      "repomix-packing": {
+        "command": "node",
+        "args": ["C:/path/to/claude-mcp-servers/repomix-mcp-server.js"]
+      },
+      "task-management": {
+        "command": "node",
+        "args": ["C:/path/to/claude-mcp-servers/task-management-mcp-server.js"]
+      },
+      "advanced-file-ops": {
+        "command": "node",
+        "args": ["C:/path/to/claude-mcp-servers/advanced-file-ops-mcp-server.js"]
+      },
+      "code-quality": {
+        "command": "node",
+        "args": ["C:/path/to/claude-mcp-servers/code-quality-mcp-server.js"]
+      },
+      "process-management": {
+        "command": "node",
+        "args": ["C:/path/to/claude-mcp-servers/process-management-mcp-server.js"]
       }
     }
   }
@@ -120,6 +150,64 @@ Advanced file operations:
 - `disk_usage` - Analyze disk usage
 - `file_search` - Advanced file search
 - `cleanup_temp` - Clean temporary files
+
+### FileScopeMCP Server (`filescope-mcp-server.js`)
+Codebase analysis and visualization:
+- `analyze_codebase_structure` - Analyze directory structure and file organization
+- `find_dependencies` - Parse and analyze package dependencies
+- `analyze_file_relationships` - Map import/export relationships
+- `generate_file_tree` - Create visual directory trees
+- `count_lines_of_code` - Generate code statistics by language
+
+### Repomix MCP Server (`repomix-mcp-server.js`)
+AI-friendly code packing and documentation:
+- `pack_codebase` - Pack code into markdown/JSON/XML formats
+- `extract_code_snippets` - Extract functions and classes
+- `generate_code_summary` - High-level codebase overview
+- `create_documentation` - Auto-generate docs from comments
+- `compress_for_ai` - Optimize code for AI context limits
+
+### Task Management MCP Server (`task-management-mcp-server.js`)
+Project task tracking and organization:
+- `create_task` - Create tasks with priorities and due dates
+- `list_tasks` - Filter and sort tasks by various criteria
+- `update_task_status` - Change task status (pending/in_progress/completed)
+- `update_task` - Modify task details
+- `get_task_stats` - Generate task analytics and reports
+- `create_project` - Organize tasks into projects
+- `search_tasks` - Full-text search across tasks
+
+### Advanced File Operations MCP Server (`advanced-file-ops-mcp-server.js`)
+Powerful file manipulation and synchronization:
+- `bulk_rename_files` - Advanced renaming with patterns and numbering
+- `find_duplicate_files` - Detect duplicates by hash, size, or name
+- `organize_files_by_type` - Auto-organize files into folders
+- `batch_file_operations` - Bulk copy, move, or delete operations
+- `compress_files` - Create ZIP/TAR archives
+- `extract_archive` - Extract from compressed files
+- `file_content_search` - Search and replace within files
+- `calculate_directory_size` - Detailed disk usage analysis
+- `sync_directories` - Mirror or update directory contents
+
+### Code Quality MCP Server (`code-quality-mcp-server.js`)
+Code formatting, linting, and quality analysis:
+- `format_code` - Format code with Prettier, Black, etc.
+- `lint_code` - Run ESLint, Pylint, and other linters
+- `check_code_style` - Verify adherence to style guides
+- `analyze_complexity` - Calculate cyclomatic and cognitive complexity
+- `detect_code_smells` - Identify anti-patterns and code issues
+- `generate_quality_report` - Comprehensive quality assessments
+
+### Process Management MCP Server (`process-management-mcp-server.js`)
+System process monitoring and control:
+- `list_processes` - List running processes with filtering
+- `start_process` - Launch new processes with configuration
+- `kill_process` - Terminate processes by PID or name
+- `monitor_process` - Real-time process monitoring
+- `system_info` - System resource information
+- `process_tree` - Display parent-child process relationships
+- `service_management` - Control system services
+- `resource_monitor` - Track CPU, memory, and I/O usage
 
 ## 🔧 Prerequisites
 
