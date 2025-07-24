@@ -1,0 +1,29 @@
+{
+  "name": "claude-mcp-servers",
+  "version": "1.0.0",
+  "description": "Global MCP servers for Claude Code on Windows",
+  "type": "module",
+  "scripts": {
+    "install-all": "npm install",
+    "test": "echo \"Testing MCP servers...\" && npm run test:docker && npm run test:render && npm run test:playwright",
+    "test:docker": "node docker-mcp-server.js --test",
+    "test:render": "node deployment-mcp-server.js --test", 
+    "test:playwright": "node playwright-mcp-server.js --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dockerode": "^4.0.2",
+    "playwright": "^1.40.0",
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0",
+    "tar": "^7.0.0",
+    "archiver": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["mcp", "claude", "docker", "playwright", "render", "vercel"]
+}

@@ -1,0 +1,51 @@
+{
+  "mcp": {
+    "servers": {
+      "docker-management": {
+        "command": "node",
+        "args": ["C:/Users/aviad/OneDrive/Desktop/pdf-main/global-mcp-servers/docker-mcp-server.js"],
+        "description": "Docker container management - build, run, deploy containers",
+        "capabilities": ["container_management", "image_operations", "docker_compose"]
+      },
+      "deployment-management": {
+        "command": "node", 
+        "args": ["C:/Users/aviad/OneDrive/Desktop/pdf-main/global-mcp-servers/deployment-mcp-server.js"],
+        "description": "Deploy to Render, Vercel with health monitoring",
+        "capabilities": ["deployment", "health_checks", "dockerfile_generation"]
+      },
+      "playwright-testing": {
+        "command": "node",
+        "args": ["C:/Users/aviad/OneDrive/Desktop/pdf-main/global-mcp-servers/playwright-mcp-server.js"],
+        "description": "Browser automation, testing, and performance analysis",
+        "capabilities": ["browser_automation", "testing", "performance_analysis", "accessibility"]
+      },
+      "github-management": {
+        "command": "node",
+        "args": ["C:/Users/aviad/OneDrive/Desktop/pdf-main/global-mcp-servers/github-mcp-server.js"],
+        "description": "GitHub repository management and automation",
+        "capabilities": ["repository_management", "pr_automation", "issue_tracking", "releases"]
+      },
+      "semgrep-security": {
+        "command": "node", 
+        "args": ["C:/Users/aviad/OneDrive/Desktop/pdf-main/global-mcp-servers/semgrep-mcp-server.js"],
+        "description": "Security vulnerability scanning and code analysis",
+        "capabilities": ["security_scanning", "vulnerability_detection", "code_quality", "ci_integration"]
+      },
+      "filesystem-utilities": {
+        "command": "node",
+        "args": ["C:/Users/aviad/OneDrive/Desktop/pdf-main/global-mcp-servers/filesystem-mcp-server.js"],
+        "description": "Advanced file operations and system utilities",
+        "capabilities": ["bulk_operations", "file_search", "disk_analysis", "backup_tools"]
+      }
+    }
+  },
+  "features": {
+    "auto_discovery": true,
+    "concurrent_servers": 6,
+    "timeout": 30000
+  },
+  "logging": {
+    "level": "info",
+    "file": "mcp-servers.log"
+  }
+}
